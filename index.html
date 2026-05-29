@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026 - Sustentabilidade no Agro</title>
+    <title>Agrinho 2026 - Conectando Campo e Cidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Agrinho 2026</h1>
-        <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="tag-ano">Agrinho 2026</span>
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a produção de alimentos e a preservação do meio ambiente.</p>
+            <a href="#sobre" class="btn-principal">Explorar Tema</a>
+        </div>
     </header>
 
     <main class="container">
-        <section class="card">
-            <h2>O Desafio do Equilíbrio</h2>
-            <p>Como produzir alimentos para uma população crescente garantindo a saúde dos nossos ecossistemas? O segredo está na tecnologia e nas práticas agrícolas sustentáveis.</p>
+        
+        <section id="sobre" class="secao-info">
+            <h2>Sobre o Tema de 2026</h2>
+            <p>O Programa Agrinho 2026 nos convida a refletir sobre o maior desafio da nossa geração: como alimentar uma população global crescente e, ao mesmo tempo, proteger os recursos naturais do nosso planeta?</p>
+            <p>A resposta está na união entre o conhecimento tradicional do campo, a conscientização ecológica e a inovação tecnológica.</p>
         </section>
 
-        <section class="card">
-            <h2>Pilares do Agro Sustentável</h2>
-            <ul class="pilares-lista">
-                <li>🌱 <strong>Preservação do Solo:</strong> Rotação de culturas e plantio direto.</li>
-                <li>💧 <strong>Uso Consciente da Água:</strong> Sistemas inteligentes de irrigação por gotejamento.</li>
-                <li>🤖 <strong>Tecnologia Verde:</strong> Drones e sensores reduzindo o uso de defensivos.</li>
-            </ul>
+        <section class="pilares-grid">
+            <div class="pilar-card">
+                <div class="pilar-icone">🌱</div>
+                <h3>Produção Consciente</h3>
+                <p>Uso de técnicas como o plantio direto, rotação de culturas e manejo integrado de pragas para proteger a saúde do solo.</p>
+            </div>
+            
+            <div class="pilar-card">
+                <div class="pilar-icone">💧</div>
+                <h3>Preservação Vital</h3>
+                <p>Monitoramento do uso da água através de irrigação inteligente por gotejamento, evitando o desperdício dos recursos hídricos.</p>
+            </div>
+
+            <div class="pilar-card">
+                <div class="pilar-icone">🚀</div>
+                <h3>Tecnologia Verde</h3>
+                <p>Drones, sensores inteligentes e inteligência artificial trabalhando juntos para reduzir o impacto ambiental no campo.</p>
+            </div>
         </section>
 
-        <section class="interativo card">
-            <h2>Calculadora de Impacto Rápida</h2>
-            <p>Clique no botão para simular a economia gerada pela agricultura de precisão:</p>
-            <button onclick="calcularEconomia()">Simular Economia de Água</button>
-            <p id="resultado" class="resultado-texto"></p>
+        <section class="calculadora-box">
+            <h2>Simulador de Sustentabilidade</h2>
+            <p>Descubra o impacto positivo da tecnologia na agricultura atual:</p>
+            <button class="btn-acao" onclick="simularImpacto()">Simular Prática Sustentável</button>
+            <div id="resultado-simulacao" class="resultado"></div>
         </section>
+
     </main>
 
     <footer>
-        <p>Projeto desenvolvido para o Concurso Agrinho 2026 &copy; Todos os direitos reservados.</p>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+        <p>Criado com 🌱 e 💻 para o GitHub.</p>
     </footer>
 
     <script src="script.js"></script>
